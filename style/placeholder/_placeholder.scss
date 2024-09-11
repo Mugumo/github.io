@@ -4,8 +4,8 @@ $white-text: #fff;
 $accent-color: #f39c12; // Accent color for hover effects
 
 // Fonts
-$primary-font: 'Arial', sans-serif;
-$title-font: 'Helvetica', sans-serif;
+$primary-font: "Arial", sans-serif;
+$title-font: "Helvetica", sans-serif;
 
 .coming-soon-container {
   display: flex;
@@ -18,8 +18,7 @@ $title-font: 'Helvetica', sans-serif;
   color: $white-text;
   text-align: center;
   font-family: $primary-font;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding: 10% 5% 10% 5%;
 
   .title {
     font-size: 15rem;
@@ -27,8 +26,11 @@ $title-font: 'Helvetica', sans-serif;
     letter-spacing: 0.1em;
     margin-bottom: 20px;
     text-transform: uppercase;
-    @include respond(phone){
-        font-size: 7rem;
+    @include respond(tab-port) {
+      font-size: 9rem;
+    }
+    @include respond(phone) {
+      font-size: 6rem;
     }
   }
 
@@ -36,8 +38,11 @@ $title-font: 'Helvetica', sans-serif;
     font-size: 5rem;
     font-weight: 300;
     margin-bottom: 40px;
-    @include respond(phone){
-        font-size: 3rem;
+    @include respond(tab-port) {
+      font-size: 5rem;
+    }
+    @include respond(phone) {
+      font-size: 3rem;
     }
   }
 

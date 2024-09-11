@@ -365,8 +365,7 @@ section .row span {
   color: #fff;
   text-align: center;
   font-family: "Arial", sans-serif;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding: 10% 5% 10% 5%;
 }
 .coming-soon-container .title {
   font-size: 15rem;
@@ -375,15 +374,25 @@ section .row span {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
+@media (max-width: 56.25em) {
+  .coming-soon-container .title {
+    font-size: 9rem;
+  }
+}
 @media (max-width: 37.5em) {
   .coming-soon-container .title {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }
 .coming-soon-container .subtitle {
   font-size: 5rem;
   font-weight: 300;
   margin-bottom: 40px;
+}
+@media (max-width: 56.25em) {
+  .coming-soon-container .subtitle {
+    font-size: 5rem;
+  }
 }
 @media (max-width: 37.5em) {
   .coming-soon-container .subtitle {
