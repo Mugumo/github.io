@@ -32,6 +32,11 @@
         max-width: 350px;
         width: 100%;
       }
+      .img-fluid {
+        height: auto;
+        vertical-align: middle;
+        border-radius: 50px;
+      }
 
       @include respond(tab-land) {
         height: 100%;
@@ -50,6 +55,10 @@
         align-items: center;
         text-align: center;
       }
+    }
+
+    &__info-text {
+      font-weight: 600;
     }
   }
 }
