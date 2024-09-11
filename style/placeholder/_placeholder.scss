@@ -9,14 +9,17 @@ $title-font: 'Helvetica', sans-serif;
 
 .coming-soon-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  width: 100vw;
   background-color: $black-bg;
   color: $white-text;
   text-align: center;
   font-family: $primary-font;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 
   .title {
     font-size: 15rem;
@@ -24,12 +27,18 @@ $title-font: 'Helvetica', sans-serif;
     letter-spacing: 0.1em;
     margin-bottom: 20px;
     text-transform: uppercase;
+    @include respond(phone){
+        font-size: 7rem;
+    }
   }
 
   .subtitle {
     font-size: 5rem;
     font-weight: 300;
     margin-bottom: 40px;
+    @include respond(phone){
+        font-size: 3rem;
+    }
   }
 
   .social-icons {
