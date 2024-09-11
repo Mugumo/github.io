@@ -1,0 +1,50 @@
+// Colors
+$black-bg: #000;
+$white-text: #fff;
+$accent-color: #f39c12; // Accent color for hover effects
+
+// Fonts
+$primary-font: 'Arial', sans-serif;
+$title-font: 'Helvetica', sans-serif;
+
+.coming-soon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: $black-bg;
+  color: $white-text;
+  text-align: center;
+  font-family: $primary-font;
+
+  .title {
+    font-size: 15rem;
+    font-family: $title-font;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 20px;
+
+    .icon {
+      font-size: 2rem;
+      color: $white-text;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
